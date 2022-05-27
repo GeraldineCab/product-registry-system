@@ -1,0 +1,12 @@
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\bin\Debug\net5.0\ProductRegistrySystem.Business.deps.json
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\bin\Debug\net5.0\ProductRegistrySystem.Business.dll
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\bin\Debug\net5.0\ref\ProductRegistrySystem.Business.dll
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\bin\Debug\net5.0\ProductRegistrySystem.Business.pdb
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\obj\Debug\net5.0\ProductRegistrySystem.Business.csprojAssemblyReference.cache
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\obj\Debug\net5.0\ProductRegistrySystem.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\obj\Debug\net5.0\ProductRegistrySystem.Business.AssemblyInfoInputs.cache
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\obj\Debug\net5.0\ProductRegistrySystem.Business.AssemblyInfo.cs
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\obj\Debug\net5.0\ProductRegistrySystem.Business.csproj.CoreCompileInputs.cache
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\obj\Debug\net5.0\ProductRegistrySystem.Business.dll
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\obj\Debug\net5.0\ref\ProductRegistrySystem.Business.dll
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\obj\Debug\net5.0\ProductRegistrySystem.Business.pdb
