@@ -9,6 +9,7 @@
         <PackageReference Update="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0" />
         <PackageReference Update="Scrutor" Version="4.1.0" />
         <PackageReference Update="Swashbuckle.AspNetCore" Version="5.6.3" />
+        <PackageReference Update="Scrutor" Version="4.1.0" />
     </ItemGroup>
 
     <Choose>

@@ -1,12 +1,12 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace ProductRegistrySystem.Business.ExternalProxies.Interfaces
+namespace ProductRegistrySystem.Business.Services.Interfaces
 {
-    public interface IDiscountProxy
+    public interface IDiscountService
     {
         /// <summary>
-        /// Given a product id, retrieves the matching discount
+        /// Calls the Discount proxy to get a product's discount 
         /// </summary>
         /// <param name="productId">The product id</param>
         /// <param name="cancellationToken"></param>

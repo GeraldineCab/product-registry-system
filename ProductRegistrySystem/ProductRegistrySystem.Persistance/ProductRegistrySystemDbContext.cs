@@ -6,7 +6,7 @@ using ProductRegistrySystem.Persistence.Utils;
 
 namespace ProductRegistrySystem.Persistence
 {
-    public class ProductRegistrySystemDbContext : DbContext
+    public class ProductRegistrySystemDbContext : DbContext, IProductRegistrySystemDbContext
     {
         private readonly IConfiguration _configuration;
 

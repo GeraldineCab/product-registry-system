@@ -252,6 +252,18 @@
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.DependencyModel/3.1.6": {
+        "type": "package",
+        "dependencies": {
+          "System.Text.Json": "4.7.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll": {}
+        }
+      },
       "Microsoft.Extensions.Logging/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -497,6 +509,19 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Scrutor/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.9",
+          "Microsoft.Extensions.DependencyModel": "3.1.6"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Scrutor.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Scrutor.dll": {}
         }
       },
       "Swashbuckle.AspNetCore/5.6.3": {
@@ -1428,6 +1453,15 @@
           "ref/netstandard1.3/System.Text.Encoding.Extensions.dll": {}
         }
       },
+      "System.Text.Json/4.7.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Text.Json.dll": {}
+        }
+      },
       "System.Text.RegularExpressions/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1592,6 +1626,43 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "ProductRegistrySystem.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ProductRegistrySystem.Dto": "1.0.0",
+          "ProductRegistrySystem.Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProductRegistrySystem.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProductRegistrySystem.Business.dll": {}
+        }
+      },
+      "ProductRegistrySystem.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ProductRegistrySystem.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProductRegistrySystem.Common.dll": {}
+        }
+      },
+      "ProductRegistrySystem.Dto/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ProductRegistrySystem.Common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProductRegistrySystem.Dto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProductRegistrySystem.Dto.dll": {}
         }
       },
       "ProductRegistrySystem.Persistence/1.0.0": {
@@ -2017,6 +2088,28 @@
         "version.txt"
       ]
     },
+    "Microsoft.Extensions.DependencyModel/3.1.6": {
+      "sha512": "/UlDKULIVkLQYn1BaHcy/rc91ApDxJb7T75HcCbGdqwvxhnRQRKM2di1E70iCPMF9zsr6f4EgQTotBGxFIfXmw==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencymodel/3.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net451/Microsoft.Extensions.DependencyModel.dll",
+        "lib/net451/Microsoft.Extensions.DependencyModel.xml",
+        "lib/netstandard1.3/Microsoft.Extensions.DependencyModel.dll",
+        "lib/netstandard1.3/Microsoft.Extensions.DependencyModel.xml",
+        "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll",
+        "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.xml",
+        "microsoft.extensions.dependencymodel.3.1.6.nupkg.sha512",
+        "microsoft.extensions.dependencymodel.nuspec"
+      ]
+    },
     "Microsoft.Extensions.Logging/5.0.0": {
       "sha512": "MgOwK6tPzB6YNH21wssJcw/2MKwee8b2gI7SllYfn6rvTpIrVvVS5HAjSU2vqSku1fwqRvWP0MdIi14qjd93Aw==",
       "type": "package",
@@ -2412,6 +2505,29 @@
         "lib/netstandard1.0/_._",
         "runtime.native.system.4.3.0.nupkg.sha512",
         "runtime.native.system.nuspec"
+      ]
+    },
+    "Scrutor/4.1.0": {
+      "sha512": "qZ8GKk9qpD7/ohBrxAz36W8D4smGvnkBhtAvD1c6y8jG3rH0hgt/W4vJEcAOVsZME6Rl1cemiuTZjC4cmEP02g==",
+      "type": "package",
+      "path": "scrutor/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Scrutor.dll",
+        "lib/net461/Scrutor.pdb",
+        "lib/net461/Scrutor.xml",
+        "lib/net6.0/Scrutor.dll",
+        "lib/net6.0/Scrutor.pdb",
+        "lib/net6.0/Scrutor.xml",
+        "lib/netcoreapp3.1/Scrutor.dll",
+        "lib/netcoreapp3.1/Scrutor.pdb",
+        "lib/netcoreapp3.1/Scrutor.xml",
+        "lib/netstandard2.0/Scrutor.dll",
+        "lib/netstandard2.0/Scrutor.pdb",
+        "lib/netstandard2.0/Scrutor.xml",
+        "scrutor.4.1.0.nupkg.sha512",
+        "scrutor.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore/5.6.3": {
@@ -5470,6 +5586,28 @@
         "system.text.encoding.extensions.nuspec"
       ]
     },
+    "System.Text.Json/4.7.2": {
+      "sha512": "TcMd95wcrubm9nHvJEQs70rC0H/8omiSGGpU4FQ/ZA1URIqD4pjmFJh2Mfv1yH1eHgJDWTi2hMDXwTET+zOOyg==",
+      "type": "package",
+      "path": "system.text.json/4.7.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Text.Json.dll",
+        "lib/net461/System.Text.Json.xml",
+        "lib/netcoreapp3.0/System.Text.Json.dll",
+        "lib/netcoreapp3.0/System.Text.Json.xml",
+        "lib/netstandard2.0/System.Text.Json.dll",
+        "lib/netstandard2.0/System.Text.Json.xml",
+        "system.text.json.4.7.2.nupkg.sha512",
+        "system.text.json.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Text.RegularExpressions/4.3.0": {
       "sha512": "RpT2DA+L660cBt1FssIE9CAGpLFdFPuheB7pLpKpn6ZXNby7jDERe8Ua/Ne2xGiwLVG2JOqziiaVCGDon5sKFA==",
       "type": "package",
@@ -5983,6 +6121,21 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "ProductRegistrySystem.Business/1.0.0": {
+      "type": "project",
+      "path": "../ProductRegistrySystem.Business/ProductRegistrySystem.Business.csproj",
+      "msbuildProject": "../ProductRegistrySystem.Business/ProductRegistrySystem.Business.csproj"
+    },
+    "ProductRegistrySystem.Common/1.0.0": {
+      "type": "project",
+      "path": "../ProductRegistrySystem.Common/ProductRegistrySystem.Common.csproj",
+      "msbuildProject": "../ProductRegistrySystem.Common/ProductRegistrySystem.Common.csproj"
+    },
+    "ProductRegistrySystem.Dto/1.0.0": {
+      "type": "project",
+      "path": "../ProductRegistrySystem.Dto/ProductRegistrySystem.Dto.csproj",
+      "msbuildProject": "../ProductRegistrySystem.Dto/ProductRegistrySystem.Dto.csproj"
+    },
     "ProductRegistrySystem.Persistence/1.0.0": {
       "type": "project",
       "path": "../ProductRegistrySystem.Persistance/ProductRegistrySystem.Persistence.csproj",
@@ -5991,7 +6144,9 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "ProductRegistrySystem.Business >= 1.0.0",
       "ProductRegistrySystem.Persistence >= 1.0.0",
+      "Scrutor >= 4.1.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -6024,6 +6179,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\geraldine.cabrera\\source\\repos\\product-registry-system\\ProductRegistrySystem\\ProductRegistrySystem.Business\\ProductRegistrySystem.Business.csproj": {
+              "projectPath": "C:\\Users\\geraldine.cabrera\\source\\repos\\product-registry-system\\ProductRegistrySystem\\ProductRegistrySystem.Business\\ProductRegistrySystem.Business.csproj"
+            },
             "C:\\Users\\geraldine.cabrera\\source\\repos\\product-registry-system\\ProductRegistrySystem\\ProductRegistrySystem.Persistance\\ProductRegistrySystem.Persistence.csproj": {
               "projectPath": "C:\\Users\\geraldine.cabrera\\source\\repos\\product-registry-system\\ProductRegistrySystem\\ProductRegistrySystem.Persistance\\ProductRegistrySystem.Persistence.csproj"
             }
@@ -6040,6 +6198,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Scrutor": {
+            "target": "Package",
+            "version": "[4.1.0, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[5.6.3, )"

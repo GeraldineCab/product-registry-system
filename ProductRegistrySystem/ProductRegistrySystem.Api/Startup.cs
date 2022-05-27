@@ -1,12 +1,11 @@
 using System.Net.Http;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using ProductRegistrySystem.Business.Services.Interfaces;
 using ProductRegistrySystem.Persistence;
 
 namespace ProductRegistrySystem.Api
@@ -23,6 +22,7 @@ namespace ProductRegistrySystem.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            ConfigureDependencies(services);
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -56,15 +56,14 @@ namespace ProductRegistrySystem.Api
         private void ConfigureDependencies(IServiceCollection services)
         {
             services.AddTransient<HttpClient>();
-            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddDbContext<ProductRegistrySystemDbContext>();
 
-            //services.Scan(scan => scan
-            //    .FromAssemblies(typeof(IStockService).Assembly)
-            //    .AddClasses()
-            //    .AsMatchingInterface().WithTransientLifetime()
-            //    .FromAssemblies(typeof(IStockApplicationContext).Assembly)
-            //    .AddClasses().AsMatchingInterface().WithSingletonLifetime());
+            services.Scan(scan => scan
+                .FromAssemblies(typeof(IProductService).Assembly)
+                .AddClasses()
+                .AsMatchingInterface().WithTransientLifetime()
+                .FromAssemblies(typeof(IProductRegistrySystemDbContext).Assembly)
+                .AddClasses().AsMatchingInterface().WithSingletonLifetime());
         }
     }
 }

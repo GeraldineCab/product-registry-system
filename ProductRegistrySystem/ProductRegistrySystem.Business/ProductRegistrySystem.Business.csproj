@@ -4,4 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ProductRegistrySystem.Dto\ProductRegistrySystem.Dto.csproj" />
+    <ProjectReference Include="..\ProductRegistrySystem.Persistance\ProductRegistrySystem.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>

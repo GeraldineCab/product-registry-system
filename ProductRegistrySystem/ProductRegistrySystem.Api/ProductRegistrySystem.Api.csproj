@@ -5,10 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="Scrutor" />
+    <PackageReference Include="Swashbuckle.AspNetCore" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ProductRegistrySystem.Business\ProductRegistrySystem.Business.csproj" />
     <ProjectReference Include="..\ProductRegistrySystem.Persistance\ProductRegistrySystem.Persistence.csproj" />
   </ItemGroup>
 
