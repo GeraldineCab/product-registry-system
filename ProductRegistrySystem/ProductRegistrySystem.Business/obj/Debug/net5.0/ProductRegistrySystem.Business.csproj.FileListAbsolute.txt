@@ -10,3 +10,10 @@ C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistryS
 C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\obj\Debug\net5.0\ProductRegistrySystem.Business.dll
 C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\obj\Debug\net5.0\ref\ProductRegistrySystem.Business.dll
 C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\obj\Debug\net5.0\ProductRegistrySystem.Business.pdb
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\bin\Debug\net5.0\ProductRegistrySystem.Common.dll
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\bin\Debug\net5.0\ProductRegistrySystem.Dto.dll
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\bin\Debug\net5.0\ProductRegistrySystem.Persistence.dll
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\bin\Debug\net5.0\ProductRegistrySystem.Dto.pdb
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\bin\Debug\net5.0\ProductRegistrySystem.Persistence.pdb
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\bin\Debug\net5.0\ProductRegistrySystem.Common.pdb
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Business\obj\Debug\net5.0\ProductRegistrySystem.Business.csproj.CopyComplete

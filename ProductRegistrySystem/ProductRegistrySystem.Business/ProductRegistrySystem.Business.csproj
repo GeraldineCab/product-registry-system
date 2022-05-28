@@ -1,12 +1,17 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ProductRegistrySystem.Dto\ProductRegistrySystem.Dto.csproj" />
-    <ProjectReference Include="..\ProductRegistrySystem.Persistance\ProductRegistrySystem.Persistence.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+        <PackageReference Include="Newtonsoft.Json" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ProductRegistrySystem.Dto\ProductRegistrySystem.Dto.csproj" />
+        <ProjectReference Include="..\ProductRegistrySystem.Persistance\ProductRegistrySystem.Persistence.csproj" />
+    </ItemGroup>
 
 </Project>

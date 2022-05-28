@@ -8,19 +8,19 @@ namespace ProductRegistrySystem.Persistence.Repositories
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
-        private readonly ProductRegistrySystemDbContext _dbContext;
+        private readonly IProductRegistrySystemDbContext _dbContext;
         internal DbSet<T> DbSet;
 
-        public BaseRepository(ProductRegistrySystemDbContext dbContext)
+        public BaseRepository(IProductRegistrySystemDbContext dbContext)
         {
             _dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
-            DbSet = _dbContext?.Set<T>();
+            DbSet = (_dbContext as DbContext)?.Set<T>();
         }
 
         /// <inheritdoc />
         public T GetById(int id)
         {
-            return _dbContext.Find<T>(id);
+            return (_dbContext as DbContext)?.Find<T>(id);
         }
 
         /// <inheritdoc />
@@ -38,7 +38,7 @@ namespace ProductRegistrySystem.Persistence.Repositories
         /// <inheritdoc />
         public Task<int> SaveChangesAsync(CancellationToken cancellationToken)
         {
-            return _dbContext?.SaveChangesAsync(cancellationToken);
+            return (_dbContext as DbContext)?.SaveChangesAsync(cancellationToken);
         }
     }
 }

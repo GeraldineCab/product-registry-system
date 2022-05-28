@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using ProductRegistrySystem.Common.Utils.CustomAttributes;
+using ProductRegistrySystem.Common.CustomAttributes;
 
-namespace ProductRegistrySystem.Dto
+namespace ProductRegistrySystem.Dto.Product
 {
     public class CreateProductDto
     {

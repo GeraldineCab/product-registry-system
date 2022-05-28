@@ -1,17 +1,22 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Scrutor" />
-    <PackageReference Include="Swashbuckle.AspNetCore" />
-  </ItemGroup>
+    <PropertyGroup>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <NoWarn>$(NoWarn);1591</NoWarn>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ProductRegistrySystem.Business\ProductRegistrySystem.Business.csproj" />
-    <ProjectReference Include="..\ProductRegistrySystem.Persistance\ProductRegistrySystem.Persistence.csproj" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Scrutor" />
+        <PackageReference Include="Swashbuckle.AspNetCore" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\ProductRegistrySystem.Business\ProductRegistrySystem.Business.csproj" />
+        <ProjectReference Include="..\ProductRegistrySystem.Persistance\ProductRegistrySystem.Persistence.csproj" />
+    </ItemGroup>
 
 </Project>

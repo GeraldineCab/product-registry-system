@@ -5,6 +5,6 @@ namespace ProductRegistrySystem.Persistence.Repositories
 {
     public class ProductRepository : BaseRepository<Product>, IProductRepository
     {
-        public ProductRepository(ProductRegistrySystemDbContext context) : base(context) { }
+        public ProductRepository(IProductRegistrySystemDbContext context) : base(context) { }
     }
 }

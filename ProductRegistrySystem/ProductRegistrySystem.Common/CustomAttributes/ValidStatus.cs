@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace ProductRegistrySystem.Common.Utils.CustomAttributes
+namespace ProductRegistrySystem.Common.CustomAttributes
 {
     public class ValidStatus : ValidationAttribute
     {

@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
 using ProductRegistrySystem.Business.ExternalProxies.Interfaces;
 using ProductRegistrySystem.Business.Services.Interfaces;
 using ProductRegistrySystem.Business.Utils.Constants;
-using ProductRegistrySystem.Dto;
+using ProductRegistrySystem.Dto.Discount;
 
 namespace ProductRegistrySystem.Business.ExternalProxies
 {
@@ -17,15 +17,16 @@ namespace ProductRegistrySystem.Business.ExternalProxies
         private readonly IHttpClientHelper _httpClientHelper;
         private readonly IConfiguration _configuration;
 
-        public DiscountProxy(IHttpClientHelper httpClientHelper)
+        public DiscountProxy(IHttpClientHelper httpClientHelper, IConfiguration configuration)
         {
             _httpClientHelper = httpClientHelper ?? throw new ArgumentNullException(nameof(httpClientHelper));
+            _configuration = configuration ?? throw new ArgumentNullException(nameof(configuration));
         }
 
         /// <inheritdoc />
         public async Task<double?> GetDiscountByProductAsync(int productId, CancellationToken cancellationToken)
         {
-            var discount = (await GetAllDiscountsAsync(cancellationToken)).FirstOrDefault(product => product.Id == productId);
+            var discount = (await GetAllDiscountsAsync(cancellationToken)).FirstOrDefault(discount => discount.ProductId == productId);
 
             return discount?.Value;
         }
@@ -37,11 +38,11 @@ namespace ProductRegistrySystem.Business.ExternalProxies
         /// <returns></returns>
         private async Task<IList<DiscountDto>> GetAllDiscountsAsync(CancellationToken cancellationToken)
         {
-            var uri = $"{_configuration.GetSection(Constants.DiscountsApiConnection)}/products";
+            var uri = $"{_configuration.GetSection(Constants.DiscountsApiConnection).Value}/products";
             var request = await _httpClientHelper.GetAsync(uri, cancellationToken);
             var content = await request.Content.ReadAsStringAsync(cancellationToken);
-
-            var products = JsonSerializer.Deserialize<List<DiscountDto>>(content);
+            
+            var products = JsonConvert.DeserializeObject<List<DiscountDto>>(content);
             
             return products;
         }

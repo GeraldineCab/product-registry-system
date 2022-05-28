@@ -1,4 +1,4 @@
-﻿namespace ProductRegistrySystem.Dto
+﻿namespace ProductRegistrySystem.Dto.Discount
 {
     public class DiscountDto
     {
