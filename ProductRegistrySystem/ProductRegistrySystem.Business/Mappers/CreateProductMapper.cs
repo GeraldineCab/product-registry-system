@@ -14,7 +14,10 @@ namespace ProductRegistrySystem.Business.Mappers
         {
             var configuration = new MapperConfiguration(config =>
             {
-                config.CreateMap<CreateProductDto, Product>();
+                config.CreateMap<CreateProductDto, Product>()
+                    .ForMember(dest =>
+                        dest.Id,
+                        opt => opt.Ignore());
             });
             configuration.AssertConfigurationIsValid();
 
@@ -23,12 +26,7 @@ namespace ProductRegistrySystem.Business.Mappers
 
         public Product Get(CreateProductDto dto)
         {
-            if (dto == null)
-            {
-                return null;
-            }
-
-            return _mapper.Map<CreateProductDto, Product>(dto);
+            return dto == null ? null : _mapper.Map<CreateProductDto, Product>(dto);
         }
     }
 }
