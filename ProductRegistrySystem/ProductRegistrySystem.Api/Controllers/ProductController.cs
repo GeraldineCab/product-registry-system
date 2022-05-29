@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using ProductRegistrySystem.Api.Constants;
 using ProductRegistrySystem.Business.Services.Interfaces;
 using ProductRegistrySystem.Dto.Product;
@@ -16,12 +14,10 @@ namespace ProductRegistrySystem.Api.Controllers
     public class ProductController
     {
         private readonly IProductService _productService;
-        private readonly ILogger<ProductController> _logger;
 
-        public ProductController(IProductService productService, ILogger<ProductController> logger)
+        public ProductController(IProductService productService)
         {
             _productService = productService ?? throw new ArgumentNullException(nameof(productService));
-            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
         /// <summary>
