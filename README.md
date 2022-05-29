@@ -16,7 +16,7 @@ Regarding technical knowledge used when developing this API, you can find some o
 ___
 
 
-Please read the recommendations below so that you can access to it and test it
+Please read the recommendations below so that you can access to it and start using it
 
 #### ⚠️ Installation steps
 1. Download the source code from this repository
@@ -29,15 +29,17 @@ Please read the recommendations below so that you can access to it and test it
 ___
 
 #### API usage
-This API supports the following operations:
+Now that you're ready to use this API, you should know this API supports the following operations:
  | HttpOperation | Uri | Description |
  | ------------- | -------- | ----- | 
  | POST | api/products | Creates a new product |
  | PUT | api/products/{productId} | Updates a product's information |
  | GET | api/products/{productId} | Retrieves a product's information |
  
- You'll find the information regarding payloads and datatypes in the API documentation, which you'll see as soon you build it locally
+ Don't worry! You'll find more information regarding payloads and datatypes in the API documentation, which you'll see as soon you build it locally
  
  
 #### :bulb: The Discount API
-The discount value for each product is retrieved from an external source created in *mockAPI*. If you want to check out the Discount Api from where the product's discount were retrieve feel free to acces by clicking [here](https://62903dcb27f4ba1c65b5e172.mockapi.io/api/discounts/products/)
+The discount value for each product is retrieved from an external source created in *mockAPI*. If you want to check out the Discount Api from where the product's discount were retrieved feel free to acces by clicking [here](https://62903dcb27f4ba1c65b5e172.mockapi.io/api/discounts/products/)
+
+Hope this resource is helpful, feel free to contact me in case you need anything :)
