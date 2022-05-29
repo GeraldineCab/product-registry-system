@@ -1,6 +1,5 @@
 ﻿using System.Globalization;
 using AutoMapper;
-using ProductRegistrySystem.Dto;
 using ProductRegistrySystem.Dto.Product;
 using ProductRegistrySystem.Persistence.Entities;
 
@@ -37,12 +36,7 @@ namespace ProductRegistrySystem.Business.Mappers
 
         public ProductDto Get(Product entity)
         {
-            if (entity == null)
-            {
-                return null;
-            }
-
-            return _mapper.Map<Product, ProductDto>(entity);
+            return entity == null ? null : _mapper.Map<Product, ProductDto>(entity);
         }
     }
 }
