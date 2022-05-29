@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Net.Http;
 using System.Reflection;
@@ -10,10 +11,10 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using ProductRegistrySystem.Business.Services.Interfaces;
 using ProductRegistrySystem.Persistence;
-using Serilog;
 
 namespace ProductRegistrySystem.Api
 {
+    [ExcludeFromCodeCoverage]
     public class Startup
     {
         public Startup(IConfiguration configuration)

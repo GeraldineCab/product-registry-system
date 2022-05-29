@@ -2,14 +2,14 @@ C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistryS
 C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Dto\bin\Debug\net5.0\ProductRegistrySystem.Dto.dll
 C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Dto\bin\Debug\net5.0\ref\ProductRegistrySystem.Dto.dll
 C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Dto\bin\Debug\net5.0\ProductRegistrySystem.Dto.pdb
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Dto\bin\Debug\net5.0\ProductRegistrySystem.Common.dll
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Dto\bin\Debug\net5.0\ProductRegistrySystem.Common.pdb
 C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Dto\obj\Debug\net5.0\ProductRegistrySystem.Dto.csprojAssemblyReference.cache
 C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Dto\obj\Debug\net5.0\ProductRegistrySystem.Dto.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Dto\obj\Debug\net5.0\ProductRegistrySystem.Dto.AssemblyInfoInputs.cache
 C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Dto\obj\Debug\net5.0\ProductRegistrySystem.Dto.AssemblyInfo.cs
 C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Dto\obj\Debug\net5.0\ProductRegistrySystem.Dto.csproj.CoreCompileInputs.cache
+C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Dto\obj\Debug\net5.0\ProductRegistrySystem.Dto.csproj.CopyComplete
 C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Dto\obj\Debug\net5.0\ProductRegistrySystem.Dto.dll
 C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Dto\obj\Debug\net5.0\ref\ProductRegistrySystem.Dto.dll
 C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Dto\obj\Debug\net5.0\ProductRegistrySystem.Dto.pdb
-C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Dto\bin\Debug\net5.0\ProductRegistrySystem.Common.dll
-C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Dto\bin\Debug\net5.0\ProductRegistrySystem.Common.pdb
-C:\Users\geraldine.cabrera\source\repos\product-registry-system\ProductRegistrySystem\ProductRegistrySystem.Dto\obj\Debug\net5.0\ProductRegistrySystem.Dto.csproj.CopyComplete

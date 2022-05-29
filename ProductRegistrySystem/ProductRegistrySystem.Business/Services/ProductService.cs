@@ -37,7 +37,7 @@ namespace ProductRegistrySystem.Business.Services
             _productHandlingService.FormatDiscount(productDto, discount);
             _productHandlingService.FormatFinalPrice(productDto, discount);
             _productHandlingService.FormatPrice(productDto);
-            _productHandlingService.FormatStatusName(productDto, product);
+            _productHandlingService.FormatStatusName(productDto);
 
             return productDto;
         }

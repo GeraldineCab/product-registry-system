@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Api", "1. Api", "{BE7299
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Business", "2. Business", "{D8789834-57DF-4BF7-B1C7-500B95CD2089}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Persistance", "3. Persistance", "{739583DD-C308-4CBB-BF22-C1FCC0BA4708}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Persistence", "3. Persistence", "{739583DD-C308-4CBB-BF22-C1FCC0BA4708}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. Testing", "6. Testing", "{3F89DB18-9B6C-4EA0-B402-7140D30A3BC0}"
 EndProject
@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductRegistrySystem.ApiTe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductRegistrySystem.BusinessTests", "ProductRegistrySystem.BusinessTests\ProductRegistrySystem.BusinessTests.csproj", "{B9887279-1372-4C87-A8DC-251FEC8B9CD6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductRegistrySystem.PersistanceTests", "ProductRegistrySystem.PersistanceTests\ProductRegistrySystem.PersistanceTests.csproj", "{60E8732D-C8D3-499B-AAB6-DB3B9476216B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductRegistrySystem.PersistenceTests", "ProductRegistrySystem.PersistanceTests\ProductRegistrySystem.PersistenceTests.csproj", "{60E8732D-C8D3-499B-AAB6-DB3B9476216B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Dto", "4. Dto", "{C39F5D7B-B197-444B-A43A-66BC59DA2BF4}"
 EndProject

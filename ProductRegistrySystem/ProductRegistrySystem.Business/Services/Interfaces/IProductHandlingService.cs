@@ -8,7 +8,7 @@ namespace ProductRegistrySystem.Business.Services.Interfaces
         /// <summary>
         /// Gets the corresponding status name according to the given number
         /// </summary>
-        void FormatStatusName(ProductDto productDto, Product productEntity);
+        void FormatStatusName(ProductDto productDto);
 
         /// <summary>
         /// Applies the percentage format to the given value

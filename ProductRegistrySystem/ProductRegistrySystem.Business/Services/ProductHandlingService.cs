@@ -4,7 +4,6 @@ using ProductRegistrySystem.Common.Calculators;
 using ProductRegistrySystem.Common.Enums;
 using ProductRegistrySystem.Common.Formatters;
 using ProductRegistrySystem.Dto.Product;
-using ProductRegistrySystem.Persistence.Entities;
 
 namespace ProductRegistrySystem.Business.Services
 {
@@ -18,7 +17,7 @@ namespace ProductRegistrySystem.Business.Services
         }
 
         /// <inheritdoc />
-        public void FormatStatusName(ProductDto productDto, Product productEntity)
+        public void FormatStatusName(ProductDto productDto)
         {
             var status = _cacheHelper.GetStatusFromCache(productDto.Id);
             productDto.StatusName = ((StatusEnum.Status)status).ToString();

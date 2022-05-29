@@ -18,7 +18,7 @@ namespace ProductRegistrySystem.Business.Mappers
                 config.CreateMap<Product, ProductDto>()
                     .ForMember(dest => 
                         dest.Price,
-                        opt => opt.MapFrom(p => p.Price.ToString(CultureInfo.InvariantCulture)))
+                        opt => opt.MapFrom(p => p.Price.ToString(CultureInfo.CurrentCulture)))
                     .ForMember(dest => 
                         dest.Discount, 
                         opt => opt.Ignore())

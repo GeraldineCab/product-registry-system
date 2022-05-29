@@ -29,10 +29,10 @@ namespace ProductRegistrySystem.Api.Controllers
         /// <response code="404">Product not found</response>
         /// <returns></returns>
         [HttpGet]
-        [Route("{productId}", Name = nameof(GetProductById))]
+        [Route("{productId}", Name = nameof(GetProductByIdAsync))]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ProductDto))]
         [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
-        public async Task<ActionResult> GetProductById([FromRoute] int productId, CancellationToken cancellationToken = default)
+        public async Task<ActionResult> GetProductByIdAsync([FromRoute] int productId, CancellationToken cancellationToken = default)
         {
             var product = await _productService.GetProductById(productId, cancellationToken);
 
@@ -60,7 +60,7 @@ namespace ProductRegistrySystem.Api.Controllers
             var product = await _productService.CreateProductAsync(createProductDto, cancellationToken);
 
             return new CreatedAtRouteResult(
-                nameof(GetProductById), 
+                nameof(GetProductByIdAsync), 
                 new { productId = product.Id},  
                 product);
         }
