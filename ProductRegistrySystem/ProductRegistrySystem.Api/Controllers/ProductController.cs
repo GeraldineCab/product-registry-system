@@ -61,12 +61,7 @@ namespace ProductRegistrySystem.Api.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
         public async Task<ActionResult> CreateProductAsync([FromBody] CreateProductDto createProductDto, CancellationToken cancellationToken = default)
         {
-            var sw = new Stopwatch();
-            sw.Start();
-
             var product = await _productService.CreateProductAsync(createProductDto, cancellationToken);
-
-            _logger.LogInformation($"Operation {nameof(CreateProductAsync)} finished in {sw.ElapsedMilliseconds} ms");
 
             return new CreatedAtRouteResult(
                 nameof(GetProductById), 
@@ -89,13 +84,8 @@ namespace ProductRegistrySystem.Api.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
         public async Task<ActionResult> UpdateProductAsync([FromRoute] int productId, [FromBody] UpdateProductDto updateProductDto, CancellationToken cancellationToken = default)
         {
-            var sw = new Stopwatch();
-            sw.Start();
-
             var product = await _productService.UpdateProductAsync(productId, updateProductDto, cancellationToken);
             
-            _logger.LogInformation($"Operation {nameof(UpdateProductAsync)} finished in {sw.ElapsedMilliseconds} ms");
-
             return new OkObjectResult(product);
         }
     }
