@@ -53,6 +53,14 @@
               "target": "Package",
               "version": "[4.1.0, )"
             },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -131,7 +139,7 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[13.0.1, )"
             }
           },
           "imports": [

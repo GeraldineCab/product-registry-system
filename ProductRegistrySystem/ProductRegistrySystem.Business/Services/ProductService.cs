@@ -3,7 +3,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using ProductRegistrySystem.Business.Mappers;
 using ProductRegistrySystem.Business.Services.Interfaces;
-using ProductRegistrySystem.Business.Utils;
 using ProductRegistrySystem.Dto.Product;
 using ProductRegistrySystem.Persistence.Repositories.Interfaces;
 
@@ -13,11 +12,13 @@ namespace ProductRegistrySystem.Business.Services
     {
         private readonly IProductRepository _productRepository;
         private readonly IDiscountService _discountService;
+        private readonly IProductHandlingService _productHandlingService;
 
-        public ProductService(IProductRepository productRepository, IDiscountService discountService)
+        public ProductService(IProductRepository productRepository, IDiscountService discountService, IProductHandlingService productHandlingService)
         {
             _productRepository = productRepository ?? throw new ArgumentNullException(nameof(productRepository));
             _discountService = discountService ?? throw new ArgumentNullException(nameof(discountService));
+            _productHandlingService = productHandlingService ?? throw new ArgumentNullException(nameof(productHandlingService));
         }
 
         /// <inheritdoc />
@@ -33,7 +34,10 @@ namespace ProductRegistrySystem.Business.Services
 
             var mapper = new ProductMapper();
             var productDto = mapper.Get(product);
-            ProductHandling.FormatProduct(productDto, product, discount);
+            _productHandlingService.FormatDiscount(productDto, discount);
+            _productHandlingService.FormatFinalPrice(productDto, discount);
+            _productHandlingService.FormatPrice(productDto);
+            _productHandlingService.FormatStatusName(productDto, product);
 
             return productDto;
         }
@@ -41,14 +45,16 @@ namespace ProductRegistrySystem.Business.Services
         /// <inheritdoc />
         public async Task<ProductDto> CreateProductAsync(CreateProductDto createProductDto, CancellationToken cancellationToken)
         {
-            var createMapper = new CreateProductMapper();
             var mapper = new ProductMapper();
-            var product = createMapper.Get(createProductDto);
+            var createMapper = new CreateProductMapper();
+            var productEntity = createMapper.Get(createProductDto);
 
-            _productRepository.Add(product);
+            _productRepository.Add(productEntity);
             await _productRepository.SaveChangesAsync(cancellationToken);
 
-            return mapper.Get(product);
+            var product = mapper.Get(productEntity);
+            
+            return await GetProductById(product.Id, cancellationToken);
         }
 
         /// <inheritdoc />
@@ -71,7 +77,8 @@ namespace ProductRegistrySystem.Business.Services
             await _productRepository.SaveChangesAsync(cancellationToken);
 
             var mapper = new ProductMapper();
-            return mapper.Get(product);
+            var productDto = mapper.Get(product);
+            return await GetProductById(productDto.Id, cancellationToken);
         }
     }
 }

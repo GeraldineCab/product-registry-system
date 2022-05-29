@@ -34,7 +34,7 @@ namespace ProductRegistrySystem.Business.ExternalProxies
         /// <summary>
         /// Get all discounts
         /// </summary>
-        /// <param name="cancellationToken"></param>
+        /// <param name="cancellationToken">Transaction cancellation token</param>
         /// <returns></returns>
         private async Task<IList<DiscountDto>> GetAllDiscountsAsync(CancellationToken cancellationToken)
         {

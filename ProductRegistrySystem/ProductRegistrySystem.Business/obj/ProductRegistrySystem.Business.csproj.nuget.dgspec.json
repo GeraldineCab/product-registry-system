@@ -55,7 +55,7 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[13.0.1, )"
             }
           },
           "imports": [

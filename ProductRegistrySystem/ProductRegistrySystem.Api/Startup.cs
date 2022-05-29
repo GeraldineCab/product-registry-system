@@ -10,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using ProductRegistrySystem.Business.Services.Interfaces;
 using ProductRegistrySystem.Persistence;
+using Serilog;
 
 namespace ProductRegistrySystem.Api
 {
@@ -27,6 +28,7 @@ namespace ProductRegistrySystem.Api
         {
             ConfigureDependencies(services);
             services.AddAutoMapper(typeof(Startup));
+            services.AddMemoryCache();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

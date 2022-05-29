@@ -11,6 +11,8 @@
 
     <ItemGroup>
         <PackageReference Include="Scrutor" />
+        <PackageReference Include="Serilog.AspNetCore" />
+        <PackageReference Include="Serilog.Sinks.File" />
         <PackageReference Include="Swashbuckle.AspNetCore" />
     </ItemGroup>
 

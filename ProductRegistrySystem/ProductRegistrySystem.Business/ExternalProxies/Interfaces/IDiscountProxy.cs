@@ -9,7 +9,7 @@ namespace ProductRegistrySystem.Business.ExternalProxies.Interfaces
         /// Given a product id, retrieves the matching discount
         /// </summary>
         /// <param name="productId">The product id</param>
-        /// <param name="cancellationToken"></param>
+        /// <param name="cancellationToken">Transaction cancellation token</param>
         /// <returns>The discount value for a product</returns>
         Task<double?> GetDiscountByProductAsync(int productId, CancellationToken cancellationToken);
     }

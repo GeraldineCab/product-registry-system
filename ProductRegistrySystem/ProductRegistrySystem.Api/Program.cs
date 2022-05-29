@@ -1,11 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using Serilog;
 
 namespace ProductRegistrySystem.Api
 {
@@ -18,6 +13,10 @@ namespace ProductRegistrySystem.Api
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .UseSerilog((hostContext, logger) =>
+                {
+                    logger.WriteTo.File("C:/Logs/ProductRegistrySystem/ProductRegistrySystem.txt", rollingInterval: RollingInterval.Day);
+                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
